@@ -14,7 +14,7 @@ public class CounterController {
         return new MyCounter();
     }
 
-    @GetMapping("/view")
+    @GetMapping("/ggview")
     public String get(@ModelAttribute("mycounter") MyCounter myCounter) {
         myCounter.increment();
         return "view";
